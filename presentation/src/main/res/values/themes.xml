@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Albaring" parent="Base.Theme.Albaring" />
+    <style name="Theme.Albaring" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
