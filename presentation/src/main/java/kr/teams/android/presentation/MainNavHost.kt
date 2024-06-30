@@ -9,7 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import kr.teams.android.presentation.community.CommunityScreen
 import kr.teams.android.presentation.home.HomeScreen
+import kr.teams.android.presentation.information.InformationScreen
 import kr.teams.android.presentation.setting.SettingScreen
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -30,13 +32,19 @@ fun MainNavHost() {
                         HomeScreen()
                     }
 
-                    // TODO 인포메이션 추가 필요
+                    // TODO 사양이 빠뀔 수 있는 화면
+                    composable(route = MainRoute.INFORMATION.route) {
+                        InformationScreen()
+                    }
 
                     composable(route = MainRoute.SETTING.route) {
                         SettingScreen()
                     }
 
-                    // TODO 커뮤니티 추가 필요
+                    // TODO 사양이 빠뀔 수 있는 화면
+                    composable(route = MainRoute.COMMUNITY.route) {
+                        CommunityScreen()
+                    }
 
                 }
             },
