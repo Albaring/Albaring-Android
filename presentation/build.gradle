@@ -67,4 +67,8 @@ dependencies {
     implementation libs.hilt
     kapt libs.hilt.compiler
 
+    // Navigation
+    implementation libs.navigation.compose
+    implementation libs.hilt.navigation.compose
+
 }
