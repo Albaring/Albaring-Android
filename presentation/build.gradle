@@ -71,4 +71,7 @@ dependencies {
     implementation libs.navigation.compose
     implementation libs.hilt.navigation.compose
 
+    // lottie
+    implementation libs.lottie.compose
+
 }
