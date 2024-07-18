@@ -55,7 +55,6 @@ private fun MainBottomBar(
     onItemClick: (MainRoute) -> Unit,
 ) {
     Column {
-        Divider()
         Row(
             modifier = Modifier
                 .fillMaxWidth()

@@ -34,7 +34,7 @@ class HomeCardPagingSource @Inject constructor() : PagingSource<Int, HomeCardMod
             val items = List(itemsToLoad) { index ->
                 HomeCardModel(
                     id = startingIndex + index + 1,
-                    title = "타이틀 제목 ${startingIndex + index + 1}"
+                    title = "어떻게 하면 사회생활 잘하는 알바생이 될 수 있을까요?"
                 )
             }
 

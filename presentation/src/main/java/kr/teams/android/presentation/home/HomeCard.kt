@@ -14,6 +14,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -37,7 +38,7 @@ fun HomeCard() {
 @Composable
 fun ItemList(viewModel: HomeCardViewModel) {
     val lazyPagingItems = viewModel.items.collectAsLazyPagingItems()
-
+    Divider(color = Color.Gray, thickness = 1.dp)
     LazyColumn {
         items(
             count = lazyPagingItems.itemCount,
@@ -58,7 +59,7 @@ fun ListItemRow(item: HomeCardModel) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(10.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Box(
@@ -74,7 +75,11 @@ fun ListItemRow(item: HomeCardModel) {
             )
         }
         Spacer(modifier = Modifier.width(16.dp))
-        Text(text = item.title)
+        Text(
+            text = item.title,
+            color = Color.White,
+            style = MaterialTheme.typography.titleSmall,
+        )
     }
 }
 

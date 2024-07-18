@@ -1,7 +1,9 @@
 package kr.teams.android.presentation
 
 import android.annotation.SuppressLint
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
@@ -22,6 +24,7 @@ fun MainNavHost() {
 
     Surface {
         Scaffold(
+            modifier = Modifier.navigationBarsPadding(),
             content = { padding ->
                 NavHost(
                     modifier = Modifier.padding(padding),
@@ -50,7 +53,7 @@ fun MainNavHost() {
             },
             bottomBar = {
                 MainBottomBar(
-                    navController = navController
+                    navController = navController,
                 )
             }
         )

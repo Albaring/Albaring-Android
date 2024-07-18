@@ -1,15 +1,10 @@
 package kr.teams.android.presentation.ui.theme
 
-import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -18,16 +13,16 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40,
-    background = White_01,
-    onBackground = Black_01,
-    surface = White_01,
-    onSurface = Black_01,
+    primary = White_01,
+    secondary = White_01,
+    tertiary = White_01,
+    background = Black_01,
+    onBackground = White_01,
+    surface = Gray_01,
+    onSurface = White_01,
     onPrimary = White_01,
     onSecondary = White_01,
-    onTertiary = White_01
+    surfaceVariant = White_01,
 )
 
 @Composable
