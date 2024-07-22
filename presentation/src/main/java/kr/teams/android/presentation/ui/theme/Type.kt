@@ -15,13 +15,29 @@ private val defaultTypography = Typography()
 val Typography = Typography(
     titleLarge = defaultTypography.titleLarge.copy(fontFamily = pretendardFontFamily),
     titleMedium = defaultTypography.titleMedium.copy(fontFamily = pretendardFontFamily),
-    titleSmall = defaultTypography.titleSmall.copy(fontFamily = pretendardFontFamily),
+    titleSmall = TextStyle(
+        fontFamily = pretendardFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 13.sp
+    ),
     labelLarge = defaultTypography.labelLarge.copy(fontFamily = pretendardFontFamily),
     labelMedium = defaultTypography.labelMedium.copy(fontFamily = pretendardFontFamily),
     labelSmall = defaultTypography.labelSmall.copy(fontFamily = pretendardFontFamily),
-    bodyLarge = defaultTypography.bodyLarge.copy(fontFamily = pretendardFontFamily),
-    bodyMedium = defaultTypography.bodyMedium.copy(fontFamily = pretendardFontFamily),
-    bodySmall = defaultTypography.bodySmall.copy(fontFamily = pretendardFontFamily),
+    bodyLarge = TextStyle(
+        fontFamily = pretendardFontFamily,
+        fontWeight = FontWeight.Black,
+        fontSize = 26.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = pretendardFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 17.sp
+    ),
+    bodySmall = TextStyle(
+        fontFamily = pretendardFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 13.sp
+    ),
     displayLarge = defaultTypography.displayLarge.copy(fontFamily = pretendardFontFamily),
     displayMedium = defaultTypography.displayMedium.copy(fontFamily = pretendardFontFamily),
     displaySmall = defaultTypography.displaySmall.copy(fontFamily = pretendardFontFamily),

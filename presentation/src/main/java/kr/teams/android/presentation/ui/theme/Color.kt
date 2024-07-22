@@ -22,6 +22,8 @@ val Gray_04 = Color(0xFF83838F)
 val Gray_05 = Color(0xFFA8A8AD)
 val Gray_06 = Color(0xFFD9D9DF)
 val Gray_07 = Color(0xFFF7F7F9)
+val Gray_08 = Color(0xFFD9D9D9)
+val Gray_09 = Color(0xFFBFBFC9)
 
 
 val Alert_01 = Color(0xFFFF5050)
