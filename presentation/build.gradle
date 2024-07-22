@@ -74,4 +74,8 @@ dependencies {
     // paging3
     implementation(libs.paging.compose)
 
+    // lottie
+    implementation libs.lottie.compose
+
+
 }

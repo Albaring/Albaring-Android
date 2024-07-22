@@ -4,9 +4,13 @@
     <application>
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Albaring" />
+        <activity
+            android:name=".splash.SplashScreen"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Albaring">
+            android:theme="@style/Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
