@@ -3,7 +3,6 @@ package kr.teams.android.presentation
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
@@ -13,7 +12,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import kr.teams.android.presentation.community.CommunityScreen
 import kr.teams.android.presentation.home.HomeScreen
-import kr.teams.android.presentation.information.InformationScreen
+import kr.teams.android.presentation.workPlace.WorkPlaceScreen
 import kr.teams.android.presentation.setting.SettingScreen
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -36,8 +35,8 @@ fun MainNavHost() {
                     }
 
                     // TODO 사양이 빠뀔 수 있는 화면
-                    composable(route = MainRoute.INFORMATION.route) {
-                        InformationScreen()
+                    composable(route = MainRoute.WORKPLACE.route) {
+                        WorkPlaceScreen()
                     }
 
                     composable(route = MainRoute.SETTING.route) {
